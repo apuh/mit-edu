@@ -8,16 +8,29 @@
     </head>
     <body>       
         <header>  
+             <a class="logo"  href="http://www.altotoga.com"  target="_blank">  
+                <img id="imagenlogo" onmouseover="icoico()" onmouseout="altotoga()" src="http://altotoga.com/img/logo.png">  </a> 
+
+
+            <nav id="nave">
+
+                <a href="nosotros/nosotros.html"> Nosotros </a> 
+                <a href="productos/productos.html"> Productos </a> 
+                <a href="servicios/servicios.html"> Servicios </a>
+                <a href="contacto/contacto.html"> Contacto </a> 
+            </nav> 
+            <!--
+            
             <img src="imagen/caballo.jpg">
             <nav>
-                <a href="http://www.altotoga.com"  target="_blank">  <img src="http://altotoga.com/img/logo.png" </a> 
+                <a href="http://www.altotoga.com"  target="_blank">  <img src="http://altotoga.com/img/logo.png">  </a> 
                 <p><a href="nosotros/nosotros.html"> Nosotros </a> </p>
                 <p><a href="productos/productos.html"> Productos </a> </p>
                 <p class="servicios"><a href="servicios/servicios.html" style="text-decoration:none"> Servicios </a> </p>
                 <p class="contacto"><a href="contacto/contacto.html" style="text-decoration:none"> Contacto </a> </p>
-            </nav>
-            </header>   
-        <div> 
+            </nav> -->
+        </header>   
+        <div id="content"> 
             <article>
                 <h1> Edu Bucal</h1>
                 <p> Profundah, Intensah, Conurbana... #MORBOS </p>  
@@ -28,16 +41,40 @@
                     <li> Saborizado </li>
                     <p> Es el que máhs le gustah... </p>
                     <li> Texturado </li>
-                    <p> <!a href> Este le raspah...  </p>
+                    <p> <!a href> Este le raspah...  </p> 
                 </ul>  
             </section>
             <section>
                 <h2> A pelo </h2>
                 <ul>
-               <p> Traé tu certificado de salut y es 50% off </p>
+                    <p> Traé tu certificado de salut y es 50% off </p>
                 </ul>
             </section>
         </div>
-        <footer> ♣ Copylessss y colaless 2018 / Vanesí developer ♣ </footer>
+        <footer id="cola" onmouseover="dignidad(true)" onmouseout="dignidad(false)" > <u>♣ Copylessss y colaless 2018 / Vanesí developer ♣ </u></footer>
+
+
+        <script type="text/javascript">
+
+            function icoico() {
+                document.getElementById("imagenlogo").src = "imagen/caballo.jpg";
+            }
+            function altotoga() {
+                document.getElementById("imagenlogo").src = "http://altotoga.com/img/logo.png";
+                //document.getElementById("logo").innerHTML= "<img src=\"http://altotoga.com/img/logo.png\"> "; 
+            }
+            function dignidad(boo) {
+                if (boo) {
+                    document.getElementById("cola").innerHTML = "*";
+                    document.getElementById("cola").style.color = "#666600"
+                    //document.getElementById("cola").style.fontSize="xx-large";
+                } else {
+                    document.getElementById("cola").innerHTML = "<u>♣ Copylessss y colaless 2018 / Vanesí developer ♣ </u>"
+                    document.getElementById("cola").style.color = "#ffffff"
+                }
+            }
+        </script>
+
+
     </body>
 </html>

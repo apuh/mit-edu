@@ -1,42 +1,149 @@
-
 @font-face {
 
-                font-family: 'snowballs_city_personaluseoRg';
+    font-family: 'rift';
 
-                src: 
+    src: 
 
-                    url('fuente/snowballs-webfont.woff') format('woff');
+        url('fuente/rift-regular.otf') format('opentype');
 
-                font-weight: normal;
-                font-style: normal;
+    font-weight: normal;
+    font-style: normal;
 
-            } 
-/* 
-body{
-               font-family: snowballs_city_personaluseoRg;
-            }
-            div {
-                font-family: snowballs_city_personaluseoRg;
-            } */
-
-body{
-    background-color: #5a3443;
 }
+@font-face {
+
+    font-family: 'snowballs_city_personaluseoRg';
+
+    src: 
+
+        url('fuente/snowballs-webfont.woff') format('woff');
+
+    font-weight: normal;
+    font-style: normal;
+
+} 
+@font-face {
+
+    font-family: 'rift-bold';
+
+    src: 
+
+        url('fuente/rift-bold.otf') format('opentype');
+
+    font-weight: normal;
+    font-style: normal;
+
+} 
+@font-face {
+
+    font-family: 'rift-medium';
+
+    src: 
+
+        url('fuente/rift-medium.otf') format('opentype');
+
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+
+    font-family: 'rift-demi';
+
+    src: 
+
+        url('fuente/rift-demi.otf') format('opentype');
+
+    font-weight: normal;
+    font-style: normal;
+
+} 
+@font-face {
+
+    font-family: 'rift-light';
+
+    src: 
+
+        url('fuente/rift-light.otf') format('opentype');
+
+    font-weight: normal;
+    font-style: normal;
+
+} 
+
+body{
+    font-family: rift-regular;
+    background-color: #aaaaaa;
+}
+/*
+div {font-family: snowballs_city_personaluseoRg;
+    
+} */
+
+
+
+header {
+    font-family: rift-bold;
+    /*    width: 100%;
+        height: 100%;*/
+    position: relative;
+    /*      overflow: hidden;*/
+    background-color: #a879b7;
+    /*    background-size: cover;*/
+    background-position: center ;
+
+}
+nav {
+
+    margin: 0;
+    text-align: center;
+    /*margin-top: 100px;*/
+    color: #00ff9c;
+    font-size: 20px;
+    padding: 10px;
+    /*    line-height: 40px;*/
+    /*  margin-bottom: 90px;*/
+    font-weight: 10;
+    background-color: #f7f22b;
+}
+
+nav a {
+    padding: 10px;
+    /*    padding-top: 10px;
+        padding-bottom: 10px;*/
+
+}
+
+header a:hover {
+    background-color: #4CAF50;
+}
+
+
+
+#imagenlogo {
+
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+    z-index: 2;
+    background-color: #f7f22b;
+
+    width: 150px;
+    height: 200px;
+}
+
+#content{
+    margin-top: 180px;
+}
+
 #Puh{
     color: #333333;
 }
-header {
+/*#cola {
     
-  width: 100%;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  background-color: #a879b7;
-  background-size: cover;
-  background-position: center center;
-}
-
-.contacto {
+}*/
+/*.contacto {
   
   padding-top: 10px;
   padding-bottom: 10px;
@@ -59,6 +166,20 @@ header {
   margin-bottom: 90px;
   font-weight: 10;
   background-color: #F63333
+}*/
+footer {
+    font-family: rift-demi;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 90px;
+    margin-bottom: 90px;
+    font-weight: 10;
+    background-color: #a9b3d0;
+
 }
 
-/*body nav*/ p {color: #00ff9c;}
+
+/*body nav*/ p {color: #00ff9c;} 

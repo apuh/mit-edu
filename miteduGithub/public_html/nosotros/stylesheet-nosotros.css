@@ -1,0 +1,24 @@
+
+
+body{
+    background-color: #4286f4;
+}
+.nos{ 
+font-size: 30px;
+text-align: center;
+color: #3333ff;
+font-family: calibri;
+font-size: 300%;
+}
+.párrafo{ 
+font-size: 30px;
+color: #3333ff;
+font-family: calibri;
+font-size: 100%;
+padding: 30px;
+
+}
+img{
+    width:518px;
+    height:388px;
+}
